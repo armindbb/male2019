@@ -399,7 +399,7 @@ write.table(result.rob, file="autoMPG_ROB.csv", col.names = TRUE, row.names = FA
 
 
 
-###################### Random forrest    #######################################
+###################### Random forest    #######################################
 grid_rf <- expand.grid(
     mtry = c(1, 10, 20, 50, 100)
 )
