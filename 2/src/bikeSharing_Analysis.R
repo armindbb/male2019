@@ -334,7 +334,7 @@ write.table(result.rob, file="bikeSharing_ROB.csv", col.names = TRUE, row.names 
 
 
 
-###################### Random forrest    #######################################
+###################### Random forest    #######################################
 train_control_rf <- trainControl(
     method="cv", 
     number=10,  
