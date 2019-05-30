@@ -110,6 +110,7 @@ model_rf <- train(
   na.action=na.omit
 )
 
+model_rf$results
 plot(model_rf$results$mtry, model_rf$results$Rsquared, xlab="mtry", ylab="r²", log = "x", type = "b")
 
 plot(data$critical_temp, predict(model_rf$finalModel), xlab="y", ylab="y-hat")
