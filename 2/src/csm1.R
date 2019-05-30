@@ -107,6 +107,7 @@ model_rf <- train(
   method="rf"
 )
 
+model_rf$results
 plot(model_rf$results$mtry, model_rf$results$Rsquared, xlab="mtry", ylab="r²", log = "x", type = "b")
 
 plot(data$Gross, predict(model_rf$finalModel), xlab="y", ylab="y-hat")
